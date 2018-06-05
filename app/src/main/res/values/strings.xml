@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">I.E.S. Ciudad de Haro</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nombre_instituto">I.E.S. Ciudad de Haro</string>
+    <string name="logo">logo</string>
+    <string name="direccion">C/ Mazo, 11. 26200 Haro - La Rioja</string>
+</resources>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web oficial I.E.S. Ciudad de Haro" />
+    <meta name="author" content="Alumnos del Ciudad de Haro" />
+    <meta name=keywords content="Haro,Instituto,estudios">
+    <!--imagen para facebook-->
+    <link rel="image_src" href="">
+    <link rel="shortcut icon" type="image/png"   href="../design/logo/icono.png" />
+    <link rel="stylesheet" href="design/fuentes/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="design/css/motion-ui.min.css " />
+    <link rel="stylesheet" href="design/css/app.css" />
+
+    <script
+            src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<span class="titulo">HOME, IES Ciudad de Haro</span>
+<div class="cabecera ">
+    <div class="row expanded">
+        <div class="small-2 medium-1 column text-center">
+            <span class="fi-align-justify" style="font-size: 2.8em;cursor: pointer" title="Menú principal" data-toggle="lateral"></span>
+        </div>
+        <div class="small-10 medium-10 column" style="line-height:none; font-style: italic;">
+            <span class="show-for-large" style=" font-size: 3em;">I.E.S. Ciudad de Haro</span>
+            <span class="show-for-medium-only" style=" font-size: 1.6em;">I.E.S. Ciudad de Haro</span>
+            <span class="show-for-small-only" style=" font-size: 1.3em;color:whitesmoke;font-weight: bolder">I.E.S. Ciudad de Haro</span>
+            <span style="line-height: 90%;vertical-align: text-top">
+                    <br class="hide-for-large"/>
+                    <span class="hide-for-small-only"> &nbsp;</span>
+              <a href="#../contents/about_as/about_as.html"><span class="fi-info plus"> </span></a>
+              <a href="#../contents/hemeroteca/noticias.html"><span class="fi-page plus"> </span></a>
+              <a href="#../contents/secretaria/calendario/calendario.html"><span class="fi-calendar plus"> </span></a>
+              <a href="#../contents/secretaria/calendario/calendario.html"><span class="fi-clock plus"> </span></a>
+              <a href="#../privado/acceso.php"><span class="fi-lock plus" > </span></a>
+
+
+                </span>
+            <span id="img_cargando"><img src="../design/images/cargando.gif" /></span>
+        </div>
+        <div class="medium-1 column hide-for-small-only text-right align-self-bottom" style=" overflow: hidden">
+            <a href="" title="Home"><span class="fi-home" style="font-size: 2em"></span></a>
+        </div>
+    </div>
+</div>
+
+<div class="menu_principal" >
+    <div class="hide-for-small-only medium-1 large-1 columns text-right">
+        .
+    </div>
+    <div class="small-12 medium-6 large-8 columns">
+        <a href=""  class="informacion" style="color: #666;font-weight: bolder">Página principal</a>
+    </div>
+    <div class="hide-for-small-only medium-5 large-3 columns">
+        <?php include '../2018/part/banner/enlaces.html';?>
+    </div>
+</div>
+
+
+<div class="lateral ">
+    <div class="barra_superior">
+        <div class="row text-left">
+            <div class="small-2 column text-left" style="padding: 8px 0 0 16px;cursor: pointer">
+                <span class="fi-align-justify" style="line-height: 1px; font-size: 2.8em;color: white" data-toggle="lateral"></span>
+            </div>
+            <div class="small-10 column text-left" style="font-size: 1.2em;color:whitesmoke">
+                <span>I.E.S. "Ciudad de Haro"</span>
+                <p>MENÚ</p>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="menu">
+            <?php include_once './part/menu/principal.html';?>
+        </div>
+        <div class="submenu">
+            <div class="titulo1">
+                &nbsp;&nbsp;<span class="fi-arrow-left" style="font-size: 1.2em" data-toggle="submenu">&nbsp;&nbsp;Volver</span>
+            </div>
+            <div><?php include_once './part/menu/submenus.html';?></div>
+        </div>
+    </div>
+    <div class="barra_inferior">
+        <?php include '../2018/part/banner/enlaces.html';?>
+    </div>
+    <div class="swipe arrastre"></div>
+</div>
+
+
+
+
+<div class="" id="contenido">
+</div>
+
+
+
+<!--<script src="../design/js/jquery/jquery.min.js"></script>-->
+<script type="text/javascript" src="design/js/jquery/jquery.touchSwipe.min.js"></script>
+<script src="design/js/menu_lateral.js"></script>
+<script src="design/js/modal.js"></script>
+<script src="design/js/iesharo.js"></script>
+<script src="design/js/foundation/foundation.min.js"></script>
+<script src="design/js/foundation/motion-ui.min.js"></script>
+<script>
+         if (typeof (swipe) === "undefined") {
+            $.getScript("../design/js/jquery/jquery.touchSwipe.min.js");
+         }
+         $(function(){
+            //iesharo.inicializa({"banner":"../contents/secretaria/plazos/plazos.html","tiempo":"6"});
+            iesharo.inicializa();
+            $(document).foundation();
+         });
+        </script>
+</body>
+</html>
